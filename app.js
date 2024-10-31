@@ -6,11 +6,11 @@ import sendRoute from './test.js'
 import express from 'express';
 const app = express();
 
-// import { readLogs } from './streamReader.js';
+
 setInterval(async () => {
   const stats = getSystemStats();
   monitorThreshold(stats);
-  // streamReader();
+ 
   await logStats(stats);
 }, 5000); 
 

@@ -1,0 +1,19 @@
+        Logger.js
+Here this  code is a JavaScript function that logs system statistics such as the CPU load and memory usage into a file called system_logs.txt created by system itself. It uses async and await to handle asynchronous file operations, which means it will wait for these operations to finish before moving to the next line of code. And then it also uses catch error to handle any errors that may occur during the file operations.
+
+            monitor.js
+the OS module in Node js gives information about the operating system such as the CPU usage, memory usage, and others system related to the operating system.
+This code provides a way to check system stats by exporting a function that collects CPU load and memory data.
+
+
+            streamReader.js
+This code defines a function to read and print the contents of system_logs.txt in chunks.
+It uses a readable stream to handle potentially large files efficiently.
+The data event is used to process each chunk of file data as it’s read.
+
+                            systemAlert.js
+monitorThreshold function: Monitors memory usage and emits a custom event if usage exceeds a specified threshold.
+alertEmitter: Emits and listens to the highMemoryUsage event, which logs an alert when high memory usage is detected.
+
+
+/Users/hardpro/Desktop/Screen Shot 2024-10-31 at 17.40.25.png
